@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        tools:layout="@layout/main_fragment"
+        android:id="@+id/mainFragment"
+        android:name="com.example.guessnumberfragments2.fragments.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_changePlayerFragment"
+            app:destination="@id/changePlayerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_developersFragment"
+            app:destination="@id/developersFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/change_player_fragment"
+        android:id="@+id/changePlayerFragment"
+        android:name="com.example.guessnumberfragments2.fragments.ChangePlayerFragment"
+        android:label="ChangePlayerFragment" />
+    <fragment
+        tools:layout="@layout/developers_fragment"
+        android:id="@+id/developersFragment"
+        android:name="com.example.guessnumberfragments2.fragments.DevelopersFragment"
+        android:label="DevelopersFragment" />
+</navigation>
